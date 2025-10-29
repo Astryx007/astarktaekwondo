@@ -20,10 +20,10 @@ const Index = () => {
       {/* Hero Section with Background Image */}
       <section className="relative bg-secondary overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-         <img
+        <img
   src={blackbeltHero}
   alt="Taekwondo Black Belt"
-  className="w-full h-full object-cover brightness-110 contrast-110"
+  className="w-full h-full object-cover filter brightness-125 contrast-125"
 />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/70"></div>
         </div>

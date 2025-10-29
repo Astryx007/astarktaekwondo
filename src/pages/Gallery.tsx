@@ -68,7 +68,7 @@ const Gallery = () => {
                 </CardContent>
               </Card>
 
-             
+            </div>
 
             <Card className="bg-primary text-primary-foreground text-center">
               <CardContent className="p-8">

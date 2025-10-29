@@ -54,7 +54,9 @@ All colors MUST be HSL.
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
+.opacity-30 {
+  opacity: 1 !important;
+}
   .dark {
     --background: 0 0% 8%;
     --foreground: 0 0% 95%;
@@ -103,6 +105,4 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
-.opacity-30 {
-  opacity: 1 !important;
-}
+

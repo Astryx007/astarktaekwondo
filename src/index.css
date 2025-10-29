@@ -103,3 +103,6 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+.opacity-30 {
+  opacity: 1 !important;
+}

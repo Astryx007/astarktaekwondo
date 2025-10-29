@@ -1,7 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Baby, Dumbbell, Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import tinykids from "@/assets/tinykids.png";
+import kidsclass from "@/assets/kidsclass.png";
+import compresults from "@/assets/compresults.png";
+import adultclass from "@/assets/adultclass.png";
 
 const Program = () => {
   return (
@@ -19,12 +24,16 @@ const Program = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card>
+              <Card className="overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={tinykids} 
+                    alt="Little Tigers Program" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Baby className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-2xl">Little Tigers (Ages 4-6)</CardTitle>
-                  </div>
+                  <CardTitle className="text-2xl">Little Tigers (Ages 4-6)</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -52,12 +61,16 @@ const Program = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={kidsclass} 
+                    alt="Kids & Teens Program" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Users className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-2xl">Kids & Teens (Ages 7-17)</CardTitle>
-                  </div>
+                  <CardTitle className="text-2xl">Kids & Teens (Ages 7-17)</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -85,12 +98,16 @@ const Program = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={adultclass} 
+                    alt="Adult Program" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Dumbbell className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-2xl">Adult Program (18+)</CardTitle>
-                  </div>
+                  <CardTitle className="text-2xl">Adult Program (18+)</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -118,12 +135,16 @@ const Program = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={compresults} 
+                    alt="Competition Team" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Trophy className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-2xl">Competition Team</CardTitle>
-                  </div>
+                  <CardTitle className="text-2xl">Competition Team</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -159,12 +180,9 @@ const Program = () => {
                   Try our 2-week trial program for only $19.99 and discover which program best fits your 
                   goals and schedule!
                 </p>
-                <a
-                  href="/free-trial"
-                  className="inline-block bg-secondary text-secondary-foreground px-8 py-3 rounded-md font-semibold hover:bg-secondary/90 transition-colors"
-                >
-                  Start Your Free Trial
-                </a>
+                <Button asChild size="lg" variant="secondary">
+                  <Link to="/free-trial">Start Your Free Trial</Link>
+                </Button>
               </CardContent>
             </Card>
           </div>

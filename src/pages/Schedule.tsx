@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import classSchedule from "@/assets/class-schedule.png";
 
 const Schedule = () => {
   return (
@@ -19,6 +20,15 @@ const Schedule = () => {
             <p className="text-xl text-center text-muted-foreground mb-12">
               Find the perfect class time for your schedule
             </p>
+
+            {/* Schedule Image */}
+            <div className="mb-8">
+              <img 
+                src={classSchedule} 
+                alt="Star Taekwondo Class Schedule" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
             
             <Card className="mb-8">
               <CardHeader>

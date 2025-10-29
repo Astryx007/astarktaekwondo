@@ -1,6 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import regularClass from "@/assets/regular-class.jpg";
+import regularClass2 from "@/assets/regular-class-2.jpg";
+import specialEvents from "@/assets/special-events.jpg";
+import beltTesting from "@/assets/belt-testing.jpg";
+import boardBreaking from "@/assets/board-breaking.jpg";
+import compResults from "@/assets/compresults.png";
+import buddyDay from "@/assets/buddy-day.jpg";
+import competitionWinners from "@/assets/competition-winners.jpg";
 
 const Gallery = () => {
   return (
@@ -17,76 +25,60 @@ const Gallery = () => {
               See our students in action at classes, events, and competitions
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Class Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Regular Classes</h3>
-                  <p className="text-sm text-muted-foreground">
-                    View our students training and learning
-                  </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={regularClass} alt="Regular Taekwondo class in session at Star Taekwondo" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Regular Classes</h3>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Event Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Special Events</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Demonstrations, parties, and celebrations
-                  </p>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={regularClass2} alt="Students practicing Taekwondo forms" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Training Sessions</h3>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Belt Test Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Belt Testing</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Students advancing to their next rank
-                  </p>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={specialEvents} alt="Special event demonstration with instructors" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Special Events</h3>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Board Breaking Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Board Breaking Day</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Students breaking boards and building confidence
-                  </p>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={beltTesting} alt="Belt testing ceremony at Star Taekwondo" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Belt Testing</h3>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Tournament Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Tournaments</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Competition team members in action
-                  </p>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={boardBreaking} alt="Student practicing board breaking technique" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Board Breaking</h3>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-muted-foreground">Buddy Day Photos</span>
-                  </div>
-                  <h3 className="font-bold text-lg">Buddy Day</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Students bringing friends to try taekwondo
-                  </p>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={competitionWinners} alt="Team USA medal winners at World Poomsae Championships" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Competition Results</h3>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={compResults} alt="Star Taekwondo competition achievements" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Competition Team</h3>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={buddyDay} alt="Buddy Day group photo with all students" className="w-full h-64 object-cover" />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-center">Buddy Day</h3>
                 </CardContent>
               </Card>
             </div>

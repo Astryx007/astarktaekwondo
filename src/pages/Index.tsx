@@ -2,8 +2,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Link } from "react-router-dom";
-import { Award, Users, Target, Heart, MapPin, Phone, Mail } from "lucide-react";
+import { Award, Users, Target, Heart, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
 import giftCertificate from "@/assets/gift-certificate.png";
 import newspaperFeature from "@/assets/newspaper-feature.jpg";
 import cherryFestival from "@/assets/cherry-festival.jpg";
@@ -125,28 +127,32 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Video & Special Offer Section */}
-      <section className="py-16 bg-muted/50">
+      {/* Video Section */}
+      <section className="py-16 bg-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            {/* YouTube Video */}
-            <div className="mb-16">
-              <div className="max-w-3xl mx-auto">
-                <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-xl">
-                  <iframe 
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/ytUrs-KRi5g?si=AQtR3S_cQpsJbpUC" 
-                    title="Star Taekwondo Video" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
-                  ></iframe>
-                </div>
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8">See Us In Action</h2>
+              <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-xl">
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/ytUrs-KRi5g?si=AQtR3S_cQpsJbpUC" 
+                  title="Star Taekwondo Video" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Special Offer */}
+      {/* Special Offer Section */}
+      <section className="py-16 bg-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <Card className="border-2 border-primary h-full">
@@ -287,45 +293,190 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Free Trial Signup Section */}
+      <section className="py-16 bg-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-4">Start Your Free Trial Today</h2>
+            <p className="text-xl text-center text-muted-foreground mb-12">
+              Experience Star Taekwondo with our special 2-week trial program
+            </p>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <Card className="border-2 border-primary">
+                <CardContent className="p-8">
+                  <div className="text-center mb-6">
+                    <div className="inline-block bg-primary text-primary-foreground rounded-full px-6 py-2 text-lg font-bold mb-4">
+                      Special Offer: $19.99
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">2-Week Trial Program</h3>
+                    <p className="text-muted-foreground">
+                      Perfect for beginners - no experience necessary!
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-start">
+                      <CheckCircle2 className="h-6 w-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold">1 Private Lesson</h4>
+                        <p className="text-sm text-muted-foreground">
+                          One-on-one instruction tailored to your needs
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <CheckCircle2 className="h-6 w-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold">3 Group Classes</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Experience our community and learn with others
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <CheckCircle2 className="h-6 w-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold">All Ages Welcome</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Programs available for children, teens, and adults
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold mb-6">Sign Up Now</h3>
+                  <form className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="firstName">First Name *</Label>
+                        <Input id="firstName" name="firstName" required className="mt-1" />
+                      </div>
+                      <div>
+                        <Label htmlFor="lastName">Last Name *</Label>
+                        <Input id="lastName" name="lastName" required className="mt-1" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <Label htmlFor="trialEmail">Email *</Label>
+                      <Input id="trialEmail" name="email" type="email" required className="mt-1" />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="trialPhone">Phone Number *</Label>
+                      <Input id="trialPhone" name="phone" type="tel" required className="mt-1" />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="age">Age *</Label>
+                        <Input id="age" name="age" type="number" required className="mt-1" />
+                      </div>
+                      <div>
+                        <Label htmlFor="grade">Grade (if applicable)</Label>
+                        <Input id="grade" name="grade" className="mt-1" />
+                      </div>
+                    </div>
+
+                    <Button type="submit" size="lg" className="w-full">
+                      Submit Registration
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Get In Touch</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <h2 className="text-4xl font-bold text-center mb-4">Get In Touch</h2>
+            <p className="text-xl text-center text-muted-foreground mb-12">
+              We'd love to hear from you. Contact us today!
+            </p>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <Card>
-                <CardContent className="p-6 text-center">
-                  <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Location</h3>
-                  <p className="text-muted-foreground">
-                    900 N. Austin Avenue #307<br />
-                    Georgetown, Texas 78626
-                  </p>
+                <CardContent className="p-8">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Location</h3>
+                      <p className="text-muted-foreground">
+                        900 N. Austin Avenue #307<br />
+                        Georgetown, Texas 78626
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4 mb-6">
+                    <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Phone</h3>
+                      <a href="tel:512.819.4000" className="text-muted-foreground hover:text-primary transition-colors">
+                        512.819.4000
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Email</h3>
+                      <a href="mailto:info@gtstartaekwondo.com" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                        info@gtstartaekwondo.com
+                      </a>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
+
               <Card>
-                <CardContent className="p-6 text-center">
-                  <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Phone</h3>
-                  <p className="text-muted-foreground">
-                    512.819.4000
-                  </p>
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-2xl mb-6">Send Us a Message</h3>
+                  <form className="space-y-4">
+                    <div>
+                      <Label htmlFor="name">Name *</Label>
+                      <Input type="text" id="name" name="name" required className="mt-1" />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="email">Email *</Label>
+                      <Input type="email" id="email" name="email" required className="mt-1" />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="phone">Phone</Label>
+                      <Input type="tel" id="phone" name="phone" className="mt-1" />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="message">Message *</Label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows={4}
+                        required
+                        className="w-full mt-1 px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                      ></textarea>
+                    </div>
+
+                    <Button type="submit" className="w-full">
+                      Send Message
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Email</h3>
-                  <p className="text-muted-foreground">
-                    info@gtstartaekwondo.com
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="text-center">
-              <Button asChild size="lg">
-                <Link to="/contact">Visit Our Contact Page</Link>
-              </Button>
             </div>
           </div>
         </div>

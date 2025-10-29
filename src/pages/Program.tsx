@@ -25,7 +25,7 @@ const Program = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden">
-                <div className="h-48 overflow-hidden">
+                <div className="h-40 overflow-hidden">
                   <img 
                     src={tinykids} 
                     alt="Little Tigers Program" 
@@ -62,7 +62,7 @@ const Program = () => {
               </Card>
 
               <Card className="overflow-hidden">
-                <div className="h-48 overflow-hidden">
+                <div className="h-40 overflow-hidden">
                   <img 
                     src={kidsclass} 
                     alt="Kids & Teens Program" 
@@ -99,7 +99,7 @@ const Program = () => {
               </Card>
 
               <Card className="overflow-hidden">
-                <div className="h-48 overflow-hidden">
+                <div className="h-40 overflow-hidden">
                   <img 
                     src={adultclass} 
                     alt="Adult Program" 
@@ -136,7 +136,7 @@ const Program = () => {
               </Card>
 
               <Card className="overflow-hidden">
-                <div className="h-48 overflow-hidden">
+                <div className="h-40 overflow-hidden">
                   <img 
                     src={compresults} 
                     alt="Competition Team" 

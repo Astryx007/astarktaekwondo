@@ -68,20 +68,7 @@ const Gallery = () => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img src={compResults} alt="Star Taekwondo competition achievements" className="w-full h-64 object-cover" />
-                <CardContent className="p-4">
-                  <h3 className="font-semibold text-center">Competition Team</h3>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img src={buddyDay} alt="Buddy Day group photo with all students" className="w-full h-64 object-cover" />
-                <CardContent className="p-4">
-                  <h3 className="font-semibold text-center">Buddy Day</h3>
-                </CardContent>
-              </Card>
-            </div>
+             
 
             <Card className="bg-primary text-primary-foreground text-center">
               <CardContent className="p-8">

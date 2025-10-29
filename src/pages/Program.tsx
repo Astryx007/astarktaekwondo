@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import tinykids from "@/assets/tinykids.png";
-import kidsclass from "@/assets/kidsclass.png";
+import kidsclass from "@/assets/teeenclass.jpg;
 import compresults from "@/assets/compresults.png";
 import adultclass from "@/assets/adultclass.png";
 

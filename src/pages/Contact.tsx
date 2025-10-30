@@ -23,7 +23,7 @@ const Contact = () => {
               <Card>
                 <CardContent className="p-0 overflow-hidden rounded-lg">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.98!2d-97.6778!3d30.6329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDM3JzU4LjQiTiA5N8KwNDAnNDAuMSJX!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.3799756333883!2d-97.67832730475219!3d30.65142698654144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d63e026b403b%3A0x134a57ebc593a80b!2s900%20N%20Austin%20Ave%20%23307%2C%20Georgetown%2C%20TX%2078626!5e0!3m2!1sen!2sus!4v1761782842374!5m2!1sen!2sus"
                     width="100%" 
                     height="400" 
                     style={{ border: 0 }}

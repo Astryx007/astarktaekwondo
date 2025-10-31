@@ -10,7 +10,7 @@ import giftCertificate from "@/assets/gift-certificate.png";
 import newspaperFeature from "@/assets/newspaper-feature.jpg";
 import cherryFestival from "@/assets/cherry-festival.jpg";
 import mothersDay from "@/assets/mothers-day.jpg";
-import blackbeltHero from "@/assets/blackbelt-hero.png";
+import blackbeltHero from "@/assets/blackbeltv2.webp";
 
 const Index = () => {
   return (

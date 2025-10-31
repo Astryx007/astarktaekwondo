@@ -57,6 +57,9 @@ All colors MUST be HSL.
 .opacity-30 {
   opacity: 1 !important;
 }
+  #lovable-badge {
+    display: none !important;
+            }
   .h-40 { height: 28rem !important; }
   .dark {
     --background: 0 0% 8%;

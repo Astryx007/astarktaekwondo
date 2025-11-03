@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
-import rev from "@/assets/rev.png";
+import Link from "next/link";
+import rev from "@/assets/rev.png"; // ✅ direct import for Next.js optimization
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          {/* Contact Section */}
+          {/* 📍 Contact Section */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <div className="space-y-3">
@@ -20,15 +21,17 @@ const Footer = () => {
                   Georgetown, Texas 78626
                 </p>
               </div>
+
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
                 <a
-                  href="tel:512.819.4000"
+                  href="tel:+15128194000"
                   className="text-sm hover:text-primary transition-colors"
                 >
                   512.819.4000
                 </a>
               </div>
+
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
                 <a
@@ -41,34 +44,34 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links Section */}
+          {/* 🔗 Quick Links Section */}
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/about" className="hover:text-primary transition-colors">
+                <Link href="/about" className="hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/program" className="hover:text-primary transition-colors">
+                <Link href="/program" className="hover:text-primary transition-colors">
                   Programs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/schedule" className="hover:text-primary transition-colors">
+                <Link href="/schedule" className="hover:text-primary transition-colors">
                   Schedule
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/free-trial" className="hover:text-primary transition-colors">
+                <Link href="/free-trial" className="hover:text-primary transition-colors">
                   Free Trial
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* About Section */}
+          {/* ⭐ About Section */}
           <div>
             <h3 className="text-lg font-bold mb-4">About Star Taekwondo</h3>
             <p className="text-sm text-muted-foreground">
@@ -76,26 +79,27 @@ const Footer = () => {
               Building character, confidence, and discipline one student at a time.
             </p>
 
-            {/* ✅ Google Reviews Badge (direct external link) */}
+            {/* ✅ Google Reviews Badge under paragraph */}
             <a
-              href="https://www.google.com/maps/place/Star+Taekwondo/@30.6807149,-97.7397593,13z/data=!4m12!1m2!2m1!1smartial+arts!3m8!1s0x8644d615f31eec77:0xb902159200a17cae!8m2!3d30.651447!4d-97.6764465!9m1!1b1!15sCgxtYXJ0aWFsIGFydHNaDiIMbWFydGlhbCBhcnRzkgETbWFydGlhbF9hcnRzX3NjaG9vbJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VScWJFdGxWR2xSUlJBQqoBRhABKhAiDG1hcnRpYWwgYXJ0cygAMh4QASIaS_N8jUBw-HA-a15TJ887v1aKPN8gbZo5AEYyEBACIgxtYXJ0aWFsIGFydHPgAQD6AQQIABBF!16s%2Fg%2F1260ynlg9?entry=ttu&g_ep=EgoyMDI1MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/XxBZbqUjTjCn6oRM6"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="See our Google reviews"
               className="inline-block mt-4"
             >
               <Image
-                src={require('@/assets/rev.png')}
+                src={rev}
                 alt="Google Reviews — click to read and leave a review"
                 width={180}
                 height={60}
                 className="hover:opacity-90 transition"
+                priority={false}
               />
             </a>
           </div>
         </div>
 
-        {/* Footer Bottom */}
+        {/* ⚙️ Footer Bottom */}
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Star Taekwondo. All rights reserved.</p>
         </div>
@@ -105,4 +109,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

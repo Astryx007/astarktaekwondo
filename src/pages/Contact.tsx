@@ -83,14 +83,13 @@ const Contact = () => {
                       <h3 className="font-bold text-lg mb-2">Office Hours</h3>
                       <div className="text-muted-foreground space-y-1">
                         <p>Monday<br>3:30–8 PM<br></p>
-<p>Tuesday<br>3:30–8 PM<br></p>
-<p>Wednesday<br>3:30–6 PM<br></p>
-<p>Thursday<br>3:30–8 PM<br></p>
-<p>Friday<br>3:30–8 PM<br></p>
-<p>Saturday<br>9 AM–12 PM<br></p>
-<p>Sunday<br>Closed</p>
-
-                        <p>Sunday: Closed</p>
+                        <p>Tuesday<br>3:30–8 PM<br></p>
+                        <p>Wednesday<br>3:30–6 PM<br></p>
+                        <p>Thursday<br>3:30–8 PM<br></p>
+                        <p>Friday<br>3:30–8 PM<br></p>
+                        <p>Saturday<br>9 AM–12 PM<br></p>
+                        <p>Sunday<br>Closed</p>
+  
                       </div>
                     </div>
                   </div>

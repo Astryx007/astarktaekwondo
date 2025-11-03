@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import revimage from "@/assets/rev.png";
+import rev from "@/assets/rev.png";
 
 const Footer = () => {
   return (
@@ -83,7 +83,7 @@ const Footer = () => {
               aria-label="See our Google reviews"
               className="inline-block mt-4"
             >
-              <revimage
+              <rev
                 src={require('@/assets/rev.png')}
                 alt="Google Reviews — click to read and leave a review"
                 width={180}

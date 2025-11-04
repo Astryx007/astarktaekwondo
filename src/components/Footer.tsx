@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import reviewImage from "@/assets/rev.png";
 
 const Footer = () => {
   return (
@@ -66,6 +67,18 @@ const Footer = () => {
               Providing quality martial arts education for the entire family in Georgetown, Texas.
               Building character, confidence, and discipline one student at a time.
             </p>
+            <a
+              href="https://www.google.com/maps/place/Star+Taekwondo/@30.6807149,-97.7397593,13z/data=!4m12!1m2!2m1!1smartial+arts!3m8!1s0x8644d615f31eec77:0xb902159200a17cae!8m2!3d30.651447!4d-97.6764465!9m1!1b1!15sCgxtYXJ0aWFsIGFydHNaDiIMbWFydGlhbCBhcnRzkgETbWFydGlhbF9hcnRzX3NjaG9vbJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VScWJFdGxWR2xSUlJBQqoBRhABKhAiDG1hcnRpYWwgYXJ0cygAMh4QASIaS_N8jUBw-HA-a15TJ887v1aKPN8gbZo5AEYyEBACIgxtYXJ0aWFsIGFydHPgAQD6AQQIABBF!16s%2Fg%2F1260ynlg9?entry=ttu&g_ep=EgoyMDI1MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src={reviewImage}
+                alt="Google Reviews for Star Taekwondo"
+                className="h-12 w-auto"
+              />
+            </a>
           </div>
         </div>
 
@@ -77,4 +90,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer

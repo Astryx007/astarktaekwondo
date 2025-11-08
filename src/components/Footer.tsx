@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import reviewImage from "@/assets/rev.png";
+import FbIcon from "@/assets/facebook28px.svg";
 
 const Footer = () => {
   return (
@@ -76,6 +77,18 @@ const Footer = () => {
               <img
                 src={reviewImage}
                 alt="Google Reviews for Star Taekwondo"
+                className="h-12 w-auto"
+              />
+            </a>
+             <a
+              href="https://www.facebook.com/gtstartaekwondo/?fref=ts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src={FbIcon}
+                alt="Facebook for Star Taekwondo"
                 className="h-12 w-auto"
               />
             </a>
